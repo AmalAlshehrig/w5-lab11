@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <h1 id="text1"></h1>
+    <h1 id="text2"></h1>
+    <h1 id="text3"></h1>-->
+    <!--=============================================-->
+    <p id="text">Amal Ali Alshehri</p>
+    <button id="btn"type="button">Click</button>
+    <button id="btn1"type="button">font size big</button>
+    <button id="btn2"type="button">font size less</button>
+    <button id="btn3"type="button">Color</button>
+    <button id="btn4"type="button">Back Ground Color</button>
+    <button id="btn5"type="button">BackGround image</button>
+    <!--<script src="lab.js">-->
+    <script>
+        let btn=document.getElementById("btn")
+        let btn1=document.getElementById("btn1")
+        let btn2=document.getElementById("btn2")
+        let btn3=document.getElementById("btn3")
+        let btn4=document.getElementById("btn4")
+        let btn5=document.getElementById("btn5")
+        //==========================================
+        btn.addEventListener("click",function name1(){
+            let text = document.getElementById("text")
+            text.textContent="Hello";
+        })
+        //==========================================
+        btn1.addEventListener("click",function name11(){
+            let text = document.getElementById("text")
+            text.style.fontSize='50px';
+        })
+        //============================================
+        btn2.addEventListener("click",function name2(){
+            let text = document.getElementById("text")
+            text.style.fontSize='10px';
+        })
+        //===============================================
+        btn3.addEventListener("click",function name3(){
+            let text = document.getElementById("text")
+            text.style.color="blue";
+        })
+        //===============================================
+        btn4.addEventListener("click",function name4(){
+            let text = document.getElementById("text")
+            text.style.backgroundColor="green";
+        })
+        //===============================================
+        btn5.addEventListener("click",function name5(){
+            if(btn5==true){ 
+            document.body.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8rd4Y1L001-tsswJlvn380MiwwUiCmNdfQ&usqp=CAU')";
+        }else if (btn5==false){
+            document.body.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLq6z2zgzhOKLPCfXJ2U5WzqV9FNdWo492MQ&usqp=CAU')";
+        }
+    })
+    </script>
+</body>
+</html>
